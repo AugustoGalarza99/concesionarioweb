@@ -1,0 +1,179 @@
+/* Contenedor general del navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 74, 173, 0.95); /* Azul semi-transparente */
+  backdrop-filter: blur(5px); /* Efecto de vidrio esmerilado */
+  display: flex;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 74, 173, 0.2); /* Sombra basada en #004aad */
+  transition: background-color 0.3s ease;
+}
+
+/* Navbar al hacer scroll */
+.navbar.scrolled {
+  background-color: #004aad; /* Opaco al hacer scroll */
+}
+
+/* Contenido del navbar */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Consistencia con otras secciones */
+  width: 100%;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.navbar-logo {
+  width: 60px;
+  height: 60px;
+  padding: 5px 0;
+}
+
+/* Menú de navegación */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 40px; /* Más espaciado */
+}
+
+.nav-menu.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 74, 173, 0.95); /* Azul semi-transparente */
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura */
+  z-index: 1000;
+  padding-top: 80px;
+  align-items: center;
+  border-top: 3px solid #ffcc00; /* Borde amarillo */
+}
+
+/* Enlaces */
+.nav-item a {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #ffcc00; /* Amarillo del CTA */
+}
+
+/* Efecto de subrayado animado */
+.nav-item a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ffcc00;
+  transition: width 0.3s ease;
+}
+
+.nav-item a:hover::after,
+.nav-item a.nav-menu-active::after {
+  width: 100%;
+}
+
+/* Enlace activo */
+.nav-menu-active {
+  color: #ffcc00;
+  font-weight: 600;
+}
+
+/* Ícono del menú (para móvil) */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.icon {
+  color: #ffffff;
+  font-size: 2rem;
+}
+
+.menu-icon:hover .icon {
+  color: #ffcc00; /* Amarillo en hover */
+}
+
+/* Botón CTA */
+.cta-button {
+  background: #ffcc00; /* Amarillo del CTA */
+  color: #1a1a1a; /* Texto oscuro */
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(255, 204, 0, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: #e6b800; /* Dorado más oscuro */
+  box-shadow: 0 6px 15px rgba(230, 184, 0, 0.5);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-item a {
+    font-size: 1.1rem;
+  }
+
+  .nav-menu {
+    gap: 20px;
+  }
+
+  .cta-button {
+    display: none; /* Oculta el CTA en móviles */
+  }
+
+  .navbar-container {
+    padding: 0 15px;
+  }
+
+  .navbar-logo {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-item a {
+    font-size: 1rem;
+  }
+
+  .icon {
+    font-size: 1.8rem;
+  }
+}

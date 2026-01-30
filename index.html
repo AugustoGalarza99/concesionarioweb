@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es-AR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/src/assets/agendasmart.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Agenda Smart | Turnos online | Administra tu negocio</title>
+    <meta name="description" content="Agenda Smart: agenda online para gestionar turnos y reservas, enviar recordatorios por WhatsApp, administrar finanzas, catálogo de productos e integración con Mercado Pago." />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#004aad" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://www.agendasmartapp.com/" />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="Agenda Smart | Turnos online | Administra tu negocio" />
+    <meta property="og:description" content="Tomá reservas 24/7 desde tu página, enviá recordatorios por WhatsApp y administrá tu negocio en un solo lugar." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.agendasmartapp.com/" />
+    <meta property="og:image" content="https://www.agendasmartapp.com/og-image.jpg" />
+    <meta property="og:image:alt" content="Panel de Agenda Smart con turnos y recordatorios" />
+    <meta property="og:locale" content="es_AR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Agenda Smart | Turnos online | Administra tu negocio" />
+    <meta name="twitter:description" content="Agenda digital para reservas, recordatorios y finanzas. Integración con Mercado Pago." />
+    <meta name="twitter:image" content="https://www.agendasmartapp.com/og-image.jpg" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "Agenda Smart",
+          "url": "https://www.agendasmartapp.com/",
+          "logo": "https://www.agendasmartapp.com/logo-512.png",
+          "contactPoint": [{
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "areaServed": "AR",
+            "availableLanguage": ["es"],
+            "telephone": "+54 9 3572 674920"
+          }]
+        },
+        {
+          "@type": "WebSite",
+          "name": "Agenda Smart",
+          "url": "https://www.agendasmartapp.com/"
+        },
+        {
+          "@type": "SoftwareApplication",
+          "name": "Agenda Smart",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "url": "https://www.agendasmartapp.com/",
+          "description": "Agenda online para tomar reservas, enviar recordatorios por WhatsApp, gestionar catálogo de productos y finanzas. Integración con Mercado Pago.",
+          "offers": [
+            { "@type": "Offer", "name": "Plan Básico", "priceCurrency": "ARS", "price": "12000", "availability": "https://schema.org/InStock", "url": "https://www.agendasmartapp.com/#plans" },
+            { "@type": "Offer", "name": "Plan Profesional", "priceCurrency": "ARS", "price": "15000", "availability": "https://schema.org/InStock", "url": "https://www.agendasmartapp.com/#plans" },
+            { "@type": "Offer", "name": "Plan Empresarial", "priceCurrency": "ARS", "price": "18000", "availability": "https://schema.org/InStock", "url": "https://www.agendasmartapp.com/#plans" },
+            { "@type": "Offer", "name": "Plan Premium", "priceCurrency": "ARS", "price": "0", "priceSpecification": { "@type": "PriceSpecification", "price": "0", "priceCurrency": "ARS" }, "url": "https://www.agendasmartapp.com/#plans" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Puedo tomar reservas desde mi página las 24 horas?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sí. Tus clientes pueden reservar online en cualquier momento y recibir confirmaciones automáticas." }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Envía recordatorios por WhatsApp?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sí. Podés activar recordatorios automáticos por WhatsApp para reducir ausencias y reprogramaciones." }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Se integra con Mercado Pago?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sí. Podés cobrar reservas con Mercado Pago y ver el estado de pagos desde el panel." }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Incluye finanzas y catálogo de productos?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sí. Administrá ingresos/egresos y mostrale a tus clientes un muestrario de productos y servicios." }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- Vite bundle -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

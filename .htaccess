@@ -1,0 +1,38 @@
+# Activar motor de rewrite
+RewriteEngine On
+
+# 1) Forzar HTTPS
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 2) Forzar dominio www
+RewriteCond %{HTTP_HOST} !^www\.agendasmartapp\.com$ [NC]
+RewriteRule ^ https://www.agendasmartapp.com%{REQUEST_URI} [L,R=301]
+
+# 3) SPA fallback (sirve index.html para rutas que no son archivos reales)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
+
+# 4) Caching básico para estáticos (mejora velocidad)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 7 days"
+  ExpiresByType application/javascript "access plus 7 days"
+  ExpiresByType image/svg+xml "access plus 30 days"
+  ExpiresByType image/webp "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+  ExpiresDefault "access plus 1 day"
+</IfModule>
+
+# 5) Cabeceras de seguridad útiles
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "geolocation=(), microphone=()"
+</IfModule>
+
+# 6) Página 404 amigable (opcional)
+ErrorDocument 404 /index.html

@@ -1,14 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Opcional: si no lo tenés, quitá motion y usa CSS fade-in
-import {
-  Car,
-  Database,
-  Users,
-  BarChart3,
-  LayoutDashboard,
-  Globe,
-  AlertTriangle,
-} from 'lucide-react';
+import { Car, Database, Users, BarChart3, LayoutDashboard, Globe, AlertTriangle,} from 'lucide-react';
 import './FeatureSection.css';
 
 const features = [
@@ -82,9 +74,9 @@ const features = [
 const FeaturesSection = () => {
   return (
     <section className="features-section" id="funcionalidades">
-      <div className="container">
+      <div className="features-container">
         <motion.div
-          className="section-header"
+          className="features-section-header"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -100,20 +92,20 @@ const FeaturesSection = () => {
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              className="feature-card"
+              className="features-card"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.03, transition: { duration: 0.3 } }}
             >
-              <div className="feature-icon">{feature.icon}</div>
+              <div className="features-icon">{feature.icon}</div>
               <h3>{feature.title}</h3>
               <p>{feature.description}</p>
-              <ul className="benefits-list">
+              <ul className="features-benefits-list">
                 {feature.benefits.map((benefit, i) => (
                   <li key={i}>
-                    <span className="check">✓</span> {benefit}
+                    <span className="features-check">✓</span> {benefit}
                   </li>
                 ))}
               </ul>
@@ -122,7 +114,7 @@ const FeaturesSection = () => {
         </div>
 
         <motion.div
-          className="cta-bottom"
+          className="features-cta-bottom"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.5 }}
@@ -131,7 +123,7 @@ const FeaturesSection = () => {
           <p>¿Querés ver cómo se adapta a tu concesionario?</p>
           <a
             href="https://wa.me/5493572674920?text=Hola%2C%20quiero%20una%20demo%20personalizada%20del%20software%20para%20concesionarios"
-            className="cta-primary"
+            className="features-cta-primary"
             target="_blank"
             rel="noopener noreferrer"
           >

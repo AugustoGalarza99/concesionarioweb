@@ -1,12 +1,6 @@
 import React from 'react';
 import './Footer.css';
-import {
-  Facebook,
-  Instagram,
-  MessageCircle, // Para WhatsApp (más limpio que FaWhatsapp)
-  Mail,
-  MapPin,
-} from 'lucide-react';
+import { Facebook, Instagram, MessageCircle, Mail, MapPin,} from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

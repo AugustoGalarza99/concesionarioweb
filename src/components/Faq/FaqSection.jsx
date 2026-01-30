@@ -73,7 +73,7 @@ const FaqSection = () => {
   return (
     <section className="faq-section" id="preguntas">
       <div className="faq-container">
-        <div className="section-header">
+        <div className="faq-section-header">
           <h2>Preguntas frecuentes</h2>
           <p>Resolvemos las dudas más comunes antes de que nos hables</p>
         </div>
@@ -90,7 +90,7 @@ const FaqSection = () => {
                 aria-expanded={openIndex === index}
               >
                 <span>{item.question}</span>
-                <div className="icon">
+                <div className="faq-icon">
                   {openIndex === index ? (
                     <ChevronUp size={24} />
                   ) : (
@@ -114,7 +114,7 @@ const FaqSection = () => {
             href="https://wa.me/5493572674920?text=Hola%21%20Tengo%20una%20consulta%20sobre%20el%20software%20para%20concesionarios..."
             target="_blank"
             rel="noopener noreferrer"
-            className="cta-button"
+            className="faq-cta-button"
           >
             Hablá con nosotros ahora
           </a>

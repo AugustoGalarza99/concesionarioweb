@@ -103,7 +103,7 @@ const PlansSection = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
-        className="section-title"
+        className="plans-section-title"
       >
         Planes adaptados a tu concesionario
       </motion.h2>
@@ -124,7 +124,7 @@ const PlansSection = () => {
         {plans.map((plan, index) => (
           <motion.div
             key={index}
-            className={`plan-card ${plan.highlighted ? 'highlighted' : ''}`}
+            className={`plans-card ${plan.highlighted ? 'highlighted' : ''}`}
             variants={{
               hidden: { opacity: 0, y: 60, scale: 0.92 },
               visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6 } },
@@ -132,16 +132,16 @@ const PlansSection = () => {
             whileHover={{ scale: 1.04, transition: { duration: 0.3 } }}
           >
             {plan.highlighted && (
-              <div className="ribbon">Recomendado</div>
+              <div className="plans-ribbon">Recomendado</div>
             )}
 
-            <h3 className="plan-title">{plan.title}</h3>
+            <h3 className="plans-title">{plan.title}</h3>
 
-            <div className="price-container">
-              <p className="plan-price">{calculatePrice(plan.basePrice, stockCount)}</p>
+            <div className="plans-price-container">
+              <p className="plans-price">{calculatePrice(plan.basePrice, stockCount)}</p>
 
               {plan.basePrice !== null && (
-                <div className="counter">
+                <div className="plans-counter">
                   <button
                     onClick={() => setStockCount(Math.max(1, stockCount - 1))}
                     aria-label="Reducir cantidad"
@@ -161,7 +161,7 @@ const PlansSection = () => {
               )}
             </div>
 
-            <ul className="features-list">
+            <ul className="plans-features-list">
               {plan.features.map((feat, i) => (
                 <motion.li
                   key={i}
@@ -170,11 +170,11 @@ const PlansSection = () => {
                   transition={{ delay: i * 0.08 }}
                 >
                   {feat.included ? (
-                    <CheckCircle className="included-icon" size={20} />
+                    <CheckCircle className="plans-included-icon" size={20} />
                   ) : (
-                    <XCircle className="excluded-icon" size={20} />
+                    <XCircle className="plans-excluded-icon" size={20} />
                   )}
-                  <span className={feat.included ? '' : 'excluded-text'}>
+                  <span className={feat.included ? '' : 'plans-excluded-text'}>
                     {feat.name}
                   </span>
                 </motion.li>
@@ -185,7 +185,7 @@ const PlansSection = () => {
               href={buildWhatsAppLink(plan.title, stockCount)}
               target="_blank"
               rel="noopener noreferrer"
-              className="plan-cta"
+              className="plans-cta"
             >
               {plan.buttonText}
             </a>
@@ -193,7 +193,7 @@ const PlansSection = () => {
         ))}
       </motion.div>
 
-      <p className="note">
+      <p className="plans-note">
         ¿Necesitás algo diferente? Armamos planes a medida sin compromiso.
       </p>
     </section>

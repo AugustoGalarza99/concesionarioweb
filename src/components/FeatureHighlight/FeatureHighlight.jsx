@@ -14,24 +14,24 @@ const FeatureHighlight = ({
 }) => {
   return (
     <motion.section
-      className={`feature-highlight ${reverse ? 'reverse' : ''}`}
+      className={`featureh-highlight ${reverse ? 'reverse' : ''}`}
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
       viewport={{ once: true }}
     >
-      <div className="feature-content">
+      <div className="featureh-content">
         {/* Lado del texto */}
-        <div className="feature-text">
-          <div className="feature-icon-wrapper">{icon}</div>
-          <h2 className="feature-title">{title}</h2>
-          <p className="feature-description">{description}</p>
+        <div className="featureh-text">
+          <div className="featureh-icon-wrapper">{icon}</div>
+          <h2 className="featureh-title">{title}</h2>
+          <p className="featureh-description">{description}</p>
 
           {benefits.length > 0 && (
-            <ul className="feature-benefits">
+            <ul className="featureh-benefits">
               {benefits.map((benefit, index) => (
                 <li key={index}>
-                  <span className="check">✓</span> {benefit}
+                  <span className="featureh-check">✓</span> {benefit}
                 </li>
               ))}
             </ul>
@@ -39,11 +39,11 @@ const FeatureHighlight = ({
         </div>
 
         {/* Lado de la imagen */}
-        <div className="feature-image-container">
+        <div className="featureh-image-container">
           <motion.img
             src={imageUrl}
             alt={title}
-            className="feature-image"
+            className="featureh-image"
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.04 }}
             transition={{ duration: 0.4 }}

@@ -3,25 +3,25 @@
   background: #0a0a0a;
 }
 
-.container {
+.features-container {
   max-width: 1400px;
   margin: 0 auto;
 }
 
-.section-header {
+.features-section-header {
   text-align: center;
   max-width: 900px;
   margin: 0 auto 6rem;
 }
 
-.section-header h2 {
+.features-section-header h2 {
   font-size: 3.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: white;
 }
 
-.section-header p {
+.features-section-header p {
   font-size: 1.4rem;
   color: #c0c0c0;
   line-height: 1.6;
@@ -33,7 +33,7 @@
   gap: 2.5rem;
 }
 
-.feature-card {
+.features-card {
   background: rgba(20, 20, 20, 0.85);
   border: 1px solid rgba(0, 212, 255, 0.15);
   border-radius: 16px;
@@ -42,39 +42,39 @@
   backdrop-filter: blur(8px);
 }
 
-.feature-card:hover {
+.features-card:hover {
   transform: translateY(-10px);
   border-color: #00d4ff;
   box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
 }
 
-.feature-icon {
+.features-icon {
   color: #00d4ff;
   margin-bottom: 1.8rem;
   display: flex;
   justify-content: center;
 }
 
-.feature-card h3 {
+.features-card h3 {
   font-size: 1.9rem;
   margin-bottom: 1rem;
   text-align: center;
   color: white;
 }
 
-.feature-card p {
+.features-card p {
   font-size: 1.15rem;
   color: #d0d0d0;
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.benefits-list {
+.features-benefits-list {
   list-style: none;
   text-align: left;
 }
 
-.benefits-list li {
+.features-benefits-list li {
   display: flex;
   align-items: flex-start;
   gap: 1rem;
@@ -83,25 +83,25 @@
   color: #e0e0e0;
 }
 
-.check {
+.features-check {
   color: #00d4ff;
   font-weight: bold;
   font-size: 1.3rem;
   flex-shrink: 0;
 }
 
-.cta-bottom {
+.features-cta-bottom {
   text-align: center;
   margin-top: 6rem;
 }
 
-.cta-bottom p {
+.features-cta-bottom p {
   font-size: 1.5rem;
   color: #b0b0b0;
   margin-bottom: 2rem;
 }
 
-.cta-primary {
+.features-cta-primary {
   background: #00d4ff;
   color: #0a0a0a;
   padding: 1.3rem 3.5rem;
@@ -113,7 +113,7 @@
   transition: all 0.3s ease;
 }
 
-.cta-primary:hover {
+.features-cta-primary:hover {
   background: #00b0d4;
   transform: scale(1.05);
   box-shadow: 0 15px 30px rgba(0, 212, 255, 0.3);
@@ -121,6 +121,6 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .section-header h2 { font-size: 2.8rem; }
-  .feature-card { padding: 2.5rem 1.8rem; }
+  .features-section-header h2 { font-size: 2.8rem; }
+  .features-card { padding: 2.5rem 1.8rem; }
 }

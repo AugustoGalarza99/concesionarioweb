@@ -1,36 +1,36 @@
-.features-highlights {
+.featureh-highlights {
   padding: 6rem 2rem;
   background: #0a0a0a;
 }
 
-.feature-highlight {
+.featureh-highlight {
   max-width: 1400px;
   margin: 0 auto 8rem;
 }
 
-.feature-content {
+.featureh-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
 }
 
-.feature-highlight.reverse .feature-content {
+.featureh-highlight.reverse .feature-content {
   grid-template-columns: 1fr 1fr;
   /* Invierte el orden visual en desktop */
 }
 
-.feature-text {
+.featureh-text {
   padding: 2rem;
 }
 
-.feature-icon-wrapper {
+.featureh-icon-wrapper {
   margin-bottom: 1.5rem;
   display: flex;
   justify-content: flex-start;
 }
 
-.feature-title {
+.featureh-title {
   font-size: 2.8rem;
   font-weight: 700;
   color: white;
@@ -38,19 +38,19 @@
   line-height: 1.2;
 }
 
-.feature-description {
+.featureh-description {
   font-size: 1.3rem;
   color: #d0d0d0;
   line-height: 1.7;
   margin-bottom: 2.5rem;
 }
 
-.feature-benefits {
+.featureh-benefits {
   list-style: none;
   padding: 0;
 }
 
-.feature-benefits li {
+.featureh-benefits li {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -59,14 +59,14 @@
   color: #e0e0e0;
 }
 
-.check {
+.featureh-check {
   color: #00d4ff;
   font-size: 1.4rem;
   font-weight: bold;
   flex-shrink: 0;
 }
 
-.feature-image-container {
+.featureh-image-container {
   position: relative;
   overflow: hidden;
   border-radius: 16px;
@@ -75,7 +75,7 @@
   border: 1px solid rgba(0, 212, 255, 0.15);
 }
 
-.feature-image {
+.featureh-image {
   width: 100%;
   height: auto;
   display: block;
@@ -84,38 +84,38 @@
 }
 
 /* Hover en toda la tarjeta */
-.feature-highlight:hover .feature-image-container {
+.featureh-highlight:hover .feature-image-container {
   box-shadow: 0 25px 50px rgba(0, 212, 255, 0.25);
   border-color: #00d4ff60;
 }
 
 /* Responsive */
 @media (max-width: 992px) {
-  .feature-content,
-  .feature-highlight.reverse .feature-content {
+  .featureh-content,
+  .featureh-highlight.reverse .feature-content {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
 
-  .feature-highlight.reverse .feature-text {
+  .featureh-highlight.reverse .feature-text {
     order: 2;
   }
 
-  .feature-highlight.reverse .feature-image-container {
+  .featureh-highlight.reverse .feature-image-container {
     order: 1;
   }
 
-  .feature-title {
+  .featureh-title {
     font-size: 2.4rem;
   }
 }
 
 @media (max-width: 768px) {
-  .feature-title {
+  .featureh-title {
     font-size: 2rem;
   }
 
-  .feature-description {
+  .featureh-description {
     font-size: 1.15rem;
   }
 }

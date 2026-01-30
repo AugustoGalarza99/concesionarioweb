@@ -3,7 +3,7 @@
   background: #0a0a0a;
 }
 
-.section-title {
+.plans-section-title {
   text-align: center;
   font-size: 3.2rem;
   margin-bottom: 5rem;
@@ -18,7 +18,7 @@
   margin: 0 auto;
 }
 
-.plan-card {
+.plans-card {
   background: rgba(20, 20, 20, 0.85);
   border: 1px solid rgba(0, 212, 255, 0.15);
   border-radius: 16px;
@@ -28,12 +28,12 @@
   transition: all 0.4s ease;
 }
 
-.plan-card.highlighted {
+.plans-card.highlighted {
   border-color: #00d4ff;
   box-shadow: 0 0 30px rgba(0, 212, 255, 0.25);
 }
 
-.ribbon {
+.plans-ribbon {
   position: absolute;
   top: 12px;
   right: -35px;
@@ -45,26 +45,26 @@
   font-size: 0.9rem;
 }
 
-.plan-title {
+.plans-title {
   font-size: 2.2rem;
   margin-bottom: 1.5rem;
   text-align: center;
   color: white;
 }
 
-.price-container {
+.plans-price-container {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.plan-price {
+.plans-price {
   font-size: 2.6rem;
   font-weight: 700;
   color: #00d4ff;
   margin-bottom: 1rem;
 }
 
-.counter {
+.plans-counter {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,7 +73,7 @@
   color: #d0d0d0;
 }
 
-.counter button {
+.plans-counter button {
   background: none;
   border: none;
   color: #00d4ff;
@@ -82,16 +82,16 @@
   transition: transform 0.2s;
 }
 
-.counter button:hover {
+.plans-counter button:hover {
   transform: scale(1.15);
 }
 
-.features-list {
+.plans-features-list {
   list-style: none;
   margin-bottom: 2.5rem;
 }
 
-.features-list li {
+.plans-features-list li {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -100,22 +100,22 @@
   color: #e0e0e0;
 }
 
-.included-icon {
+.plans-included-icon {
   color: #00d4ff;
   flex-shrink: 0;
 }
 
-.excluded-icon {
+.plans-excluded-icon {
   color: #666;
   flex-shrink: 0;
 }
 
-.excluded-text {
+.plans-excluded-text {
   color: #888;
   text-decoration: line-through;
 }
 
-.plan-cta {
+.plans-cta {
   display: block;
   background: #00d4ff;
   color: #0a0a0a;
@@ -127,12 +127,12 @@
   transition: all 0.3s;
 }
 
-.plan-cta:hover {
+.plans-cta:hover {
   background: #00b0d4;
   transform: translateY(-3px);
 }
 
-.note {
+.plans-note {
   text-align: center;
   margin-top: 4rem;
   color: #b0b0b0;
@@ -141,6 +141,6 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .section-title { font-size: 2.5rem; }
-  .plan-price { font-size: 2.2rem; }
+  .plans-section-title { font-size: 2.5rem; }
+  .plans-price { font-size: 2.2rem; }
 }

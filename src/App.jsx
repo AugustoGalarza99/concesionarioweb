@@ -1,10 +1,8 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import "./App.css";
-
 import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection/HeroSection";
-import InfoCards from "./components/InfoCards/InfoCards";
 import Carousel from "./components/Carousel/Carousel";
 import Plans from "./components/Plans/PlansSection";
 import AlbumDeFotos from "./components/AlbumDeFotos/AlbumDeFotos";
@@ -76,22 +74,13 @@ function App() {
           {/* Agregá más bloques según necesites */}
         </section>
 
-        {/*<section id="cards">
-          <InfoCards />
-        </section>
-
-        <section id="carousel">
+        {/*<section id="carousel">
           <Carousel />
         </section>*/}
 
         <section id="faq">
           <FaqSection />
         </section>
-
-        {/* OJO: tu sección se llama #plans (en inglés). Mantengo ese id para ser consistente */}
-        {/*<section id="plans">
-          <Plans />
-        </section>*/}
 
         {/*<AlbumDeFotos />*/}
       </main>

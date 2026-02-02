@@ -1,97 +1,87 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection/HeroSection";
 import Carousel from "./components/Carousel/Carousel";
-import Plans from "./components/Plans/PlansSection";
-import AlbumDeFotos from "./components/AlbumDeFotos/AlbumDeFotos";
 import Footer from "./components/Footer/Footer";
 import FloatingWhatsAppButton from "./components/Whatsapp/Whatsapp";
 import FeaturesSection from "./components/FeaturesSection/FeatureSection";
 import FaqSection from "./components/Faq/FaqSection";
 import FeatureHighlight from "./components/FeatureHighlight/FeatureHighlight";
-import { Globe, FileText } from 'lucide-react';
+import { BarChart3, LayoutDashboard } from 'lucide-react';
 
 function App() {
   return (
     <>
       {/* SEO base de la home */}
-      <Helmet>
-        <title>Agenda Smart | Turnos online | Administra tu negocio</title>
-        <meta
-          name="description"
-          content="Agenda Smart: agenda online para gestionar turnos y reservas, enviar recordatorios por WhatsApp, administrar finanzas, catálogo de productos e integración con Mercado Pago."
-        />
-        {/* En SPA con anclas (#home, #plans, etc.) lo ideal es canonical a la home sin hash */}
-        <link rel="canonical" href="https://www.agendasmartapp.com/" />
-      </Helmet>
-
+      <HelmetProvider>
+        <Helmet>
+          <title>Software Gestión Concesionarios Argentina | Automatiza Mercado Libre y Ventas</title>
+          <meta name="description" content="Software integral para concesionarios: integra Mercado Libre, genera documentos automáticos, CRM, rentabilidad por vehículo y más. Demo gratis en Oncativo, Córdoba." />
+          <meta name="keywords" content="software concesionarios, gestión stock autos, integración Mercado Libre concesionarios, software automotriz Argentina, CRM concesionarios, rentabilidad vehículos" />
+          <meta name="robots" content="index, follow" />
+          <link rel="canonical" href="https://tudominio.com/" />
+          {/* Open Graph para redes */}
+          <meta property="og:title" content="Software para Concesionarios - Maximiza Ganancias" />
+          <meta property="og:description" content="..." />
+          <meta property="og:image" content="https://tudominio.com/imagenes/og-image.jpg" />
+          <meta property="og:url" content="https://tudominio.com/" />
+          <meta property="og:type" content="website" />
+        </Helmet>
       <a href="#main" className="skip-link">Saltar al contenido</a>
 
       <header>
         <Navbar />
       </header>
-
       <main id="main">
-        <section id="home" style={{ minHeight: "100vh", backgroundColor: "#f9f9f9" }}>
+        <section id="home" >
           <HeroSection />
         </section>
-
         <section id="features">
           <FeaturesSection />
         </section>
-
         <section className="features-highlights">
           <FeatureHighlight
-            icon={<Globe size={64} color="#00d4ff" />}
-            title="Integración Total con Mercado Libre"
-            description="Sincroniza automáticamente tu inventario, optimiza tus publicaciones para aparecer siempre en los primeros resultados y gestiona todas tus ventas desde un solo lugar."
+            icon={<BarChart3 size={64} color="#00d4ff" />}
+            title="Análisis y Rentabilidad"
+            description="Tomá decisiones basadas en números reales, no en intuición."
             benefits={[
-              "Publicación automática con fotos profesionales",
-              "Estrategias de posicionamiento inteligente",
-              "+45% más visualizaciones promedio",
-              "Gestión sin mostrar competidores",
+              'Control de ingresos de vehiculos',
+              'Control de estados del vehiculo para un mayor seguimiento',
+              'Actualizacion de gastos realiados a cada vehiculo',           
             ]}
-            imageUrl="https://tu-dominio.com/imagenes/captura-mercado-libre.png" // ← Poné tu URL aquí
+            imageUrl="/img/gestionvehiculos.JPG" // ← Poné tu URL aquí
           />
-
           <FeatureHighlight
-            icon={<FileText size={64} color="#a78bfa" />}
-            title="Automatización de Documentos"
-            description="Olvidate del papeleo manual. Genera automáticamente todos los documentos legales necesarios con plantillas personalizables y firma digital integrada."
+            icon={<LayoutDashboard size={64} color="#a78bfa" />}
+            title="Dashboard de Control Total"
+            description="Todo el concesionario en un solo lugar, accesible desde cualquier dispositivo."
             benefits={[
-              "Boletos de compra-venta automáticos",
-              "Contratos personalizables",
-              "Presupuestos instantáneos",
-              "Generado en 3 segundos",
-              "Firma electrónica incluida",
+              'Rentabilidad por vehículo (ganancia neta automática)',
+              'Control de costos fijos y ganancias globales',
+              'Reportes mensuales y dashboards claros',
+              'Alertas inteligentes (baja rotación, costos altos)',
             ]}
-            imageUrl="https://tu-dominio.com/imagenes/captura-documentos.png" // ← Poné tu URL aquí
+            imageUrl="/img/dashboard.JPG" // ← Poné tu URL aquí
             reverse={true}// ← Esto invierte: imagen izquierda, texto derecha
           />
-
           {/* Agregá más bloques según necesites */}
         </section>
-
         {/*<section id="carousel">
           <Carousel />
         </section>*/}
-
         <section id="faq">
           <FaqSection />
         </section>
-
-        {/*<AlbumDeFotos />*/}
       </main>
-
       <footer>
         <Footer />
       </footer>
-
       <FloatingWhatsAppButton />
+      </HelmetProvider>
     </>
-  );
+  );  
 }
 
 export default App;

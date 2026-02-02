@@ -36,39 +36,6 @@ const features = [
       'Historial completo para mejorar cierres',
     ],
   },
-  {
-    icon: <BarChart3 size={48} />,
-    title: 'Análisis y Rentabilidad',
-    description: 'Tomá decisiones basadas en números reales, no en intuición.',
-    benefits: [
-      'Rentabilidad por vehículo (ganancia neta automática)',
-      'Estadísticas de vendedores (ventas, comisiones, rendimiento)',
-      'Control de costos fijos y ganancias globales',
-      'Reportes mensuales y dashboards claros',
-    ],
-  },
-  {
-    icon: <LayoutDashboard size={48} />,
-    title: 'Dashboard de Control Total',
-    description: 'Todo el concesionario en un solo lugar, accesible desde cualquier dispositivo.',
-    benefits: [
-      'Vista 360° para el administrador (stock, ventas, leads)',
-      'Registro de ventas por vendedor con métricas en vivo',
-      'Alertas inteligentes (baja rotación, costos altos)',
-      'Multi-usuario con permisos personalizados',
-    ],
-  },
-  {
-    icon: <AlertTriangle size={48} />,
-    title: 'Funciones Avanzadas y Más',
-    description: 'Herramientas extras que marcan la diferencia en el día a día.',
-    benefits: [
-      'Automatizaciones para documentos y contratos',
-      'Integraciones con herramientas externas si necesitás',
-      'Soporte local y actualizaciones constantes',
-      'Escalabilidad para crecer tu concesionario',
-    ],
-  },
 ];
 
 const FeaturesSection = () => {

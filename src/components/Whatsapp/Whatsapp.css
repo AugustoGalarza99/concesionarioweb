@@ -58,7 +58,7 @@
 /* Tooltip / globo de ayuda */
 .whatsapp-fab__tooltip {
   position: relative;
-  max-width: 260px;
+  max-width: 100%;
   background: #ffffff;
   color: #222;
   border: 1px solid #ececec;

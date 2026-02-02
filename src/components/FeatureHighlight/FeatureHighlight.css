@@ -119,3 +119,34 @@
     font-size: 1.15rem;
   }
 }
+
+
+
+/* Reemplaza tu .feature-content y agrega esto */
+
+.featureh-highlight .featureh-content {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+}
+
+.featureh-highlight.reverse .featureh-content {
+  flex-direction: row-reverse;
+}
+
+/* Mobile: siempre texto arriba, imagen abajo */
+@media (max-width: 992px) {
+  .featureh-highlight .featureh-content,
+  .featureh-highlight.reverse .featureh-content {
+    flex-direction: column !important;
+    gap: 3rem;
+  }
+  .featureh-image-container{
+    margin: 20px;
+  }
+  /* Forzar texto arriba en mobile */
+  .featureh-text {
+    order: -1;
+  }
+}

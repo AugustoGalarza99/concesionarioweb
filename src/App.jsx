@@ -17,7 +17,7 @@ function App() {
       {/* SEO base de la home */}
       <HelmetProvider>
         <Helmet>
-          <title>Software Gestión Concesionarios Argentina | Automatiza Mercado Libre y Ventas</title>
+          <title>Droxum | Software para concesionarios | Digitaliza tu concesionario</title>
           <meta name="description" content="Software integral para concesionarios: integra Mercado Libre, genera documentos automáticos, CRM, rentabilidad por vehículo y más. Demo gratis en Oncativo, Córdoba." />
           <meta name="keywords" content="software concesionarios, gestión stock autos, integración Mercado Libre concesionarios, software automotriz Argentina, CRM concesionarios, rentabilidad vehículos" />
           <meta name="robots" content="index, follow" />

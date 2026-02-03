@@ -1,16 +1,55 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState('inicio');
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
+  // Detectar sección visible y actualizar link activo
+  useEffect(() => {
+    const sections = document.querySelectorAll('section[id]');
+    const observerOptions = {
+      root: null,
+      rootMargin: '-100px 0px -60% 0px', // Ajusta para que detecte antes de llegar al centro
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => sections.forEach((section) => observer.unobserve(section));
+  }, []);
+
+  // Scroll suave al hacer click
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
+    closeMenu();
+
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
   };
 
-  const closeMenu = () => {
-    setIsOpen(false);
-  };
+  const navItems = [
+    { id: 'inicio', label: 'Inicio' },
+    { id: 'funcionalidades', label: 'Funcionalidades' },
+    { id: 'modelos', label: 'Modelos' },
+    { id: 'planes', label: 'Planes' },
+  ];
 
   return (
     <nav className="navbar">
@@ -21,40 +60,56 @@ const Navbar = () => {
           </a>
         </div>
 
-        {/* Desktop links */}
+        {/* Links desktop */}
         <ul className="navbar-links desktop">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#funcionalidades">Funcionalidades</a></li>
-          <li><a href="#clientes">Clientes</a></li>
-          <li><a href="#precios">Precios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          {navItems.map((item) => (
+            <li key={item.id}>
+              <a
+                href={`#${item.id}`}
+                className={activeSection === item.id ? 'active' : ''}
+                onClick={(e) => handleNavClick(e, item.id)}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
         </ul>
 
         {/* CTA desktop */}
-        <a href="https://wa.me/tunumero?text=Hola%2C%20quiero%20una%20demo" className="navbar-cta-button desktop">
+        <a
+          href="https://wa.me/5493572674920?text=Hola%2C%20quiero%20una%20demo"
+          className="navbar-cta-button desktop"
+        >
           Contacto
         </a>
 
         {/* Hamburguesa mobile */}
         <div className="navbar-hamburger" onClick={toggleMenu}>
-          <span className={isOpen ? 'navbar-open' : ''}></span>
-          <span className={isOpen ? 'navbar-open' : ''}></span>
-          <span className={isOpen ? 'navbar-open' : ''}></span>
+          <span className={isOpen ? 'open' : ''} />
+          <span className={isOpen ? 'open' : ''} />
+          <span className={isOpen ? 'open' : ''} />
         </div>
       </div>
 
-      {/* Menú móvil overlay */}
+      {/* Menú móvil */}
       <div className={`navbar-mobile-menu ${isOpen ? 'active' : ''}`}>
         <div className="navbar-mobile-menu-content">
           <ul className="navbar-links mobile">
-            <li><a href="#inicio" onClick={closeMenu}>Inicio</a></li>
-            <li><a href="#funcionalidades" onClick={closeMenu}>Funcionalidades</a></li>
-            <li><a href="#clientes" onClick={closeMenu}>Clientes</a></li>
-            <li><a href="#precios" onClick={closeMenu}>Precios</a></li>
-            <li><a href="#contacto" onClick={closeMenu}>Contacto</a></li>
+            {navItems.map((item) => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  className={activeSection === item.id ? 'active' : ''}
+                  onClick={(e) => handleNavClick(e, item.id)}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
-          <a 
-            href="https://wa.me/tunumero?text=Hola%2C%20quiero%20una%20demo" 
+
+          <a
+            href="https://wa.me/5493572674920?text=Hola%2C%20quiero%20una%20demo"
             className="navbar-cta-button navbar-mobile-cta"
             onClick={closeMenu}
           >

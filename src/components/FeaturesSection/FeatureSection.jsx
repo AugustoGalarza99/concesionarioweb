@@ -51,7 +51,7 @@ const FeaturesSection = () => {
         >
           <h2>El software que transforma tu concesionario</h2>
           <p>
-            Olvidate de planillas y procesos manuales. Gestioná todo de forma inteligente, aumentá tus ventas y maximizá ganancias con herramientas diseñadas para el mercado automotriz argentino.
+            Olvidate de planillas y procesos manuales. Gestioná todo de forma inteligente, aumentá tus ventas y maximizá ganancias con herramientas diseñadas para el mercado automotriz.
           </p>
         </motion.div>
 

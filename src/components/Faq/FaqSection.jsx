@@ -6,9 +6,10 @@ const faqItems = [
   {
     question: '¿Cuánto cuesta el software por mes?',
     answer:
-      'El precio se adapta completamente según el tamaño del concesionario, cantidad de vehículos que manejás, cantidad de usuarios y módulos que necesites.\n\n' +
-      'Los valores parten desde **$70.000 + IVA mensuales** para concesionarios pequeños/medianos.\n' +
-      'Lo mejor es que charlemos 10 minutos para entender tu caso puntual y te pueda pasar un valor exacto y realista.',
+      '• El precio se adapta completamente según el tamaño del concesionario, cantidad de vehículos que manejás, cantidad de usuarios y módulos que necesites.\n\n' +
+      '• Los valores parten desde $70.000 mensuales para concesionarios pequeños/medianos.\n' +
+      '• Tambien tenemos la opcion de un pago unico inicial mas un mantenimiento mensual.\n' +
+      '• Lo mejor es que charlemos 10 minutos para entender tu caso puntual y te pueda pasar un valor exacto y realista.',
   },
   {
     question: '¿Puedo tener mi propia página web de vehículos?',
@@ -18,30 +19,29 @@ const faqItems = [
       '• Tu logo y colores\n' +
       '• Todos los vehículos publicados con fotos y ficha completa\n' +
       '• Banners personalizables\n' +
-      '• Formulario de contacto y captura de leads\n' +
       'Y se actualiza en tiempo real cada vez que cargás/modificás un vehículo.',
   },
   {
     question: '¿Cuánto tiempo lleva implementar el sistema?',
     answer:
-      'Depende del tamaño del concesionario, pero en general:\n\n' +
-      '• Concesionarios pequeños/medianos → 7 a 20 días hábiles\n' +
-      '• Carga inicial de vehículos y configuración → nosotros te ayudamos\n' +
-      '• Training para tu equipo → 1 o 2 sesiones (presencial o remoto)\n\n' +
+      '• Por lo general el software queda listo dentro de los 2 a 5 dias habiles.\n' +
+      '• Carga inicial de vehículos y configuración → nosotros te ayudamos.\n' +
+      '• Training para tu equipo → 1 o 2 sesiones (presencial o remoto).\n\n' +
       'La idea es que puedas estar operando con todo el sistema lo más rápido posible.',
   },
   {
     question: '¿Funciona en celular / tablet?',
     answer:
-      'Sí, 100% responsive.\n\n' +
-      'Todo el sistema (incluido el dashboard de administrador, carga de vehículos, consulta de stock, reportes, etc.) está optimizado para verse y usarse muy bien desde celular y tablet.\n' +
-      'Muchos titulares y vendedores usan el sistema diariamente desde el celular.',
+      '• Sí, 100% responsive.\n\n' +
+      '• Todo el sistema (incluido el dashboard de administrador, carga de vehículos, consulta de stock, reportes, etc.) está optimizado para verse y usarse muy bien desde celular y tablet.\n' +
+      '• Muchos titulares y vendedores usan el sistema diariamente desde el celular.',
   },
   {
     question: '¿Hay costo de implementación o de alta?',
     answer:
-      'En la gran mayoría de los casos **NO** cobramos costo de implementación ni alta.\n\n' +
-      'Solo en casos muy particulares (migración de base de datos muy grande, personalizaciones muy específicas o training intensivo onsite) podríamos cobrar un monto aparte, pero siempre lo conversamos y acordamos antes.',
+      '• En la gran mayoría de los casos no cobramos costo de implementación ni alta.\n\n' +
+      '• Se cobrara el costo de implementacion si decide hacer el pago unico.\n\n' +
+      '• Solo en casos muy particulares (migración de base de datos muy grande, personalizaciones muy específicas o training intensivo onsite) podríamos cobrar un monto aparte, pero siempre lo conversamos y acordamos antes.',
   },
   {
     question: '¿Me ayudan a cargar los vehículos la primera vez?',
@@ -49,14 +49,13 @@ const faqItems = [
       'Sí, te acompañamos.\n\n' +
       'Podemos ayudarte a:\n' +
       '• Cargar la primera tanda de vehículos\n' +
-      '• Enseñarte el proceso para que lo hagas rápido vos mismo\n' +
-      '• Importar desde Excel si ya tenés los datos organizados',
+      '• Enseñarte el proceso para que lo hagas rápido vos mismo\n',
   },
   {
     question: '¿Tienen soporte en Argentina? ¿En qué horario?',
     answer:
       'Sí, soporte 100% argentino.\n\n' +
-      '• Horario habitual: Lunes a viernes 9 a 20 hs\n' +
+      '• Horario habitual: Lunes a viernes 8 a 19 hs\n' +
       '• Canal principal: WhatsApp (respuesta muy rápida)\n' +
       '• También: llamadas, reuniones por Meet/Zoom y correo\n\n' +
       'Nos tomamos muy en serio que puedas trabajar tranquilo.',

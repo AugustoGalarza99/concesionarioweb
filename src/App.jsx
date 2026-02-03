@@ -10,6 +10,8 @@ import FeaturesSection from "./components/FeaturesSection/FeatureSection";
 import FaqSection from "./components/Faq/FaqSection";
 import FeatureHighlight from "./components/FeatureHighlight/FeatureHighlight";
 import { BarChart3, LayoutDashboard } from 'lucide-react';
+import ConcesionariosPreview from "./components/ConcesionariosPreview/ConcesionariosPreview";
+import PlanesSection from "./components/PlanesSection/PlanesSection";
 
 function App() {
   return (
@@ -41,6 +43,9 @@ function App() {
         <section id="features">
           <FeaturesSection />
         </section>
+        <section id="modelos">
+          <ConcesionariosPreview />
+        </section>
         <section className="features-highlights">
           <FeatureHighlight
             icon={<BarChart3 size={64} color="#00d4ff" />}
@@ -67,6 +72,9 @@ function App() {
             reverse={true}// ← Esto invierte: imagen izquierda, texto derecha
           />
           {/* Agregá más bloques según necesites */}
+        </section>
+        <section id="planes">
+          <PlanesSection />
         </section>
         {/*<section id="carousel">
           <Carousel />

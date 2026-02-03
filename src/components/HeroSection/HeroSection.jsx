@@ -49,7 +49,7 @@ const HeroSection = () => {
         </motion.h1>
 
         <motion.p variants={itemVariants}>
-          Software integral que automatiza ventas, inventario, documentos y Mercado Libre para maximizar ganancias.
+          Software integral que automatiza ventas, inventario, documentos para maximizar ganancias.
         </motion.p>
 
         <motion.div className="hero-cta" variants={ctaVariants}>

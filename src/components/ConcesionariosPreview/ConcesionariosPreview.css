@@ -1,0 +1,149 @@
+.concesionarios-preview {
+  padding: 4rem 2rem;
+  background: #0a0a0a;
+  color: #e0e0e0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 4rem;
+}
+
+.section-header h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.section-header p {
+  font-size: 1.3rem;
+  color: #b0b0b0;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2.5rem;
+}
+
+.preview-card {
+  background: rgba(20, 20, 20, 0.85);
+  border: 1px solid rgba(0, 212, 255, 0.15);
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-card:hover {
+  transform: translateY(-10px);
+  border-color: #00d4ff;
+  box-shadow: 0 20px 40px rgba(0, 212, 255, 0.2);
+}
+
+.preview-image-container {
+  position: relative;
+  overflow: hidden;
+  height: 220px; /* Altura fija para previews consistentes */
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.preview-card:hover .preview-image {
+  transform: scale(1.08);
+}
+
+.preview-content {
+  padding: 1.8rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.preview-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.preview-content p {
+  font-size: 1.1rem;
+  color: #d0d0d0;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.preview-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background: #00d4ff;
+  color: #0a0a0a;
+  padding: 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.preview-card:hover .preview-button {
+  background: #00b0d4;
+  transform: scale(1.02);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .preview-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .preview-image-container {
+    height: 200px;
+  }
+
+  .preview-content h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .concesionarios-preview {
+    padding: 4rem 1.5rem;
+  }
+
+  .section-header h2 {
+    font-size: 2.5rem;
+  }
+
+  .preview-image-container {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .preview-content {
+    padding: 1.5rem;
+  }
+
+  .preview-button {
+    padding: 0.9rem;
+    font-size: 1rem;
+  }
+}

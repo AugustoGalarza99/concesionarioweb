@@ -10,9 +10,9 @@ const Footer = () => {
       <div className="footer-container">
         {/* Sección de marca / descripción */}
         <div className="footer-brand">
-          <h3 className="footer-logo">TuSoftware Concesionarios</h3>
+          <h3 className="footer-logo">Dromux Motors</h3>
           <p className="footer-description">
-            Software integral para concesionarios: gestioná stock, ventas, leads y rentabilidad como nunca antes. Automatizá Mercado Libre y maximizá ganancias.
+            Software integral para concesionarios: gestioná stock, ventas, leads y rentabilidad como nunca antes. Automatizá y maximizá ganancias.
           </p>
         </div>
 
@@ -76,12 +76,8 @@ const Footer = () => {
       {/* Copyright y legal */}
       <div className="footer-bottom">
         <p className="footer-copyright">
-          &copy; {currentYear} TuSoftware Concesionarios. Todos los derechos reservados.
+          &copy; {currentYear} Dromux Motors. Todos los derechos reservados.
         </p>
-        <div className="footer-legal">
-          <a href="/privacidad">Política de Privacidad</a>
-          <a href="/terminos">Términos de Servicio</a>
-        </div>
       </div>
     </footer>
   );

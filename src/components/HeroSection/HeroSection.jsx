@@ -45,11 +45,11 @@ const HeroSection = () => {
         animate="visible"
       >
         <motion.h1 variants={itemVariants}>
-          Gestioná tu concesionario como nunca antes
+          Software de gestión para concesionarios de autos que centraliza todo tu negocio
         </motion.h1>
 
         <motion.p variants={itemVariants}>
-          Software integral que automatiza ventas, inventario, documentos para maximizar ganancias.
+          Dromux es un software de gestión para concesionarios de autos que te permite controlar el stock de vehículos, las ventas, los clientes, los gastos y la rentabilidad en un solo sistema online, simple y pensado para el mercado automotriz.
         </motion.p>
 
         <motion.div className="hero-cta" variants={ctaVariants}>

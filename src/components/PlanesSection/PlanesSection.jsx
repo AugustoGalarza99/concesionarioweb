@@ -21,7 +21,7 @@ const plans = [
       { name: 'Gestión de ventas y leads', value: '✓', included: true },
       { name: 'Implementación', value: '(Bonificado)', included: true, highlight: true },
     ],
-    ctaText: 'Consultar Precio',
+    ctaText: 'Quiero este plan',
     buttonVariant: 'primary',
   },
   {
@@ -41,7 +41,7 @@ const plans = [
       { name: 'Gestión de ventas y leads', value: '✓', included: true },
       { name: 'Implementación', value: '(Bonificado)', included: true, highlight: true },
     ],
-    ctaText: 'Elegir plan',
+    ctaText: 'Empezar ahora',
     buttonVariant: 'popular',
   },
   {
@@ -61,7 +61,7 @@ const plans = [
       { name: 'Gestión de ventas y leads', value: '✓', included: true },
       { name: 'Implementación', value: '(Bonificado)', included: true, highlight: true },
     ],
-    ctaText: 'Consultar Precio',
+    ctaText: 'Hablar con un asesor',
     buttonVariant: 'primary',
   },
 ];
@@ -71,7 +71,7 @@ const PlanesSection = () => {
     <section className="planes-section" id="precios">
       <div className="container">
         <div className="section-header">
-          <h2>Elegí el plan perfecto para tu concesionario</h2>
+          <h2>Planes del software para concesionarios Dromux</h2>
           <p>Prueba gratuita de 1 mes en todos los planes. Implementación bonificada y sin contrato mínimo.</p>
         </div>
 
@@ -93,7 +93,7 @@ const PlanesSection = () => {
               )}
 
               <h3 className="plan-name">{plan.name}</h3>
-              <p className="plan-subtitle">{plan.subtitle}</p>
+              {plan.subtitle && <p className="plan-subtitle">{plan.subtitle}</p>}
 
               <ul className="plan-features">
                 {plan.features.map((feat, idx) => (

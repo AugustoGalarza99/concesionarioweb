@@ -1,6 +1,6 @@
 .hero {
-  height: 100vh;
-  min-height: 800px;
+  min-height: 100vh;
+  height: auto;
   width: 100%;                    /* ← Cambia de 100vw a 100% */
   max-width: 100vw;               /* seguridad extra */
   margin: 0;

@@ -5,19 +5,19 @@ import './ConcesionariosPreview.css';
 const concesionarios = [
   {
     id: 1,
-    title: 'Modelo Concesionario Claro',
+    title: 'Ejemplo de página web para concesionario (diseño claro)',
     description: 'Diseño moderno y modificable al gusto de cada concesionario.',
-    imageUrl: '/img/droxum.png', // ← Cambia por tu screenshot en /public/img/
+    imageUrl: '/img/dromux.png', // ← Cambia por tu screenshot en /public/img/
     url: 'https://concesionario-a.tudominio.com', // ← URL real del sitio
-    alt: 'Vista previa del concesionario modelo A',
+    alt: 'Ejemplo de página web para concesionario con catálogo de vehículos creada con Dromux',
   },
   {
     id: 2,
-    title: 'Modelo Concesionario Oscuro',
+    title: 'Ejemplo de página web para concesionario (diseño oscuro)',
     description: 'Estilo premium y modificable al gusto de cada concesionario.',
-    imageUrl: '/img/droxum.png', // ← Cambia por tu screenshot
+    imageUrl: '/img/dromux.png', // ← Cambia por tu screenshot
     url: 'https://concesionario-b.tudominio.com', // ← URL real
-    alt: 'Vista previa del concesionario modelo B',
+    alt: 'Ejemplo de página web para concesionario con catálogo de vehículos creada con Dromux',
   },
 ];
 
@@ -26,8 +26,10 @@ const ConcesionariosPreview = () => {
     <section className="concesionarios-preview" id="concesionarios">
       <div className="container">
         <div className="section-header">
-          <h2>Explorá nuestros modelos de concesionarios</h2>
-          <p>Elegí el diseño que mejor se adapta a tu negocio y probá la experiencia completa.</p>
+          <h2>Ejemplos de páginas web para concesionarios con Dromux</h2>
+          <p>
+            Mirá ejemplos reales de sitios web de concesionarios con catálogo de vehículos online, diseñados y gestionados desde Dromux.
+          </p>
         </div>
 
         <div className="preview-grid">

@@ -6,8 +6,8 @@ import './FeatureSection.css';
 const features = [
   {
     icon: <Car size={48} />,
-    title: 'Gestión Completa de Inventario',
-    description: 'Cargá, controlá y mové tus vehículos con precisión total.',
+    title: 'Gestión de stock de vehículos en tiempo real',
+    description: 'Controlá todo tu inventario desde un solo lugar con el sistema de gestión para concesionarios Dromux.',
     benefits: [
       'Carga rápida de vehículos con fotos y specs detallados',
       'Control de stock en tiempo real (ingreso/egreso automático)',
@@ -17,8 +17,8 @@ const features = [
   },
   {
     icon: <Database size={48} />,
-    title: 'Web Personalizada y Visibilidad',
-    description: 'Convertí tu stock en una vidriera online atractiva y actualizada automáticamente.',
+    title: 'Página web de vehículos para concesionarios',
+    description: 'Convertí tu stock en un catálogo online profesional que se actualiza automáticamente desde el sistema.',
     benefits: [
       'Publicación automática de vehículos en tu sitio web personalizado',
       'Personalización de banners y secciones destacadas',
@@ -27,8 +27,8 @@ const features = [
   },
   {
     icon: <Users size={48} />,
-    title: 'CRM y Seguimiento de Leads',
-    description: 'Capturá y convertí cada potencial cliente sin perder ninguno.',
+    title: 'CRM para concesionarios y seguimiento de leads',
+    description: 'Gestioná clientes, oportunidades y ventas con un CRM pensado para agencias de autos.',
     benefits: [
       'Registro detallado de leads con fuente y estado',
       'Seguimiento personalizado (notas, llamadas, WhatsApp)',
@@ -49,9 +49,10 @@ const FeaturesSection = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2>El software que transforma tu concesionario</h2>
+          <h2>Funciones del software de gestión para concesionarios Dromux</h2>
           <p>
-            Olvidate de planillas y procesos manuales. Gestioná todo de forma inteligente, aumentá tus ventas y maximizá ganancias con herramientas diseñadas para el mercado automotriz.
+            Dromux es un software de gestión para concesionarios de autos diseñado para centralizar el stock de vehículos,
+            las ventas, los clientes y la rentabilidad en un solo sistema. Olvidate de planillas y ganá control real de tu negocio automotriz.
           </p>
         </motion.div>
 

@@ -18,19 +18,21 @@ function App() {
     <>
       {/* SEO base de la home */}
       <HelmetProvider>
-        <Helmet>
-          <title>Droxum | Software para concesionarios | Digitaliza tu concesionario</title>
-          <meta name="description" content="Software integral para concesionarios: integra Mercado Libre, genera documentos automáticos, CRM, rentabilidad por vehículo y más. Demo gratis en Oncativo, Córdoba." />
-          <meta name="keywords" content="software concesionarios, gestión stock autos, integración Mercado Libre concesionarios, software automotriz Argentina, CRM concesionarios, rentabilidad vehículos" />
-          <meta name="robots" content="index, follow" />
-          <link rel="canonical" href="https://tudominio.com/" />
-          {/* Open Graph para redes */}
-          <meta property="og:title" content="Software para Concesionarios - Maximiza Ganancias" />
-          <meta property="og:description" content="..." />
-          <meta property="og:image" content="https://tudominio.com/imagenes/og-image.jpg" />
-          <meta property="og:url" content="https://tudominio.com/" />
-          <meta property="og:type" content="website" />
-        </Helmet>
+       <Helmet>
+        <title>Dromux | Software para Concesionarios en Argentina</title>
+        <meta 
+          name="description" 
+          content="Dromux es el software para concesionarios que te permite gestionar stock de vehículos, ventas, clientes, gastos y rentabilidad desde un solo lugar. Pedí una demo." 
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://dromux.com/" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Dromux | Software para Concesionarios" />
+        <meta property="og:description" content="Gestioná stock, ventas, clientes y rentabilidad con un solo sistema. Software profesional para concesionarios." />
+        <meta property="og:url" content="https://dromux.com/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <a href="#main" className="skip-link">Saltar al contenido</a>
 
       <header>
@@ -49,24 +51,25 @@ function App() {
         <section className="features-highlights">
           <FeatureHighlight
             icon={<BarChart3 size={64} color="#00d4ff" />}
-            title="Análisis y Rentabilidad"
-            description="Tomá decisiones basadas en números reales, no en intuición."
+            title="Análisis y rentabilidad por vehículo"
+            description="Controlá la rentabilidad real de tu concesionario con datos claros de ventas, gastos y márgenes por cada vehículo."
             benefits={[
-              'Control de ingresos de vehiculos',
-              'Control de estados del vehiculo para un mayor seguimiento',
-              'Actualizacion de gastos realiados a cada vehiculo',           
+              'Control de ingresos por vehículo vendido',
+              'Seguimiento del estado de cada vehículo en stock',
+              'Actualización automática de gastos asociados a cada unidad',
             ]}
+
             imageUrl="/img/gestionvehiculos.JPG" // ← Poné tu URL aquí
           />
           <FeatureHighlight
             icon={<LayoutDashboard size={64} color="#a78bfa" />}
-            title="Dashboard de Control Total"
-            description="Todo el concesionario en un solo lugar, accesible desde cualquier dispositivo."
+            title="Dashboard de gestión para concesionarios"
+            description="Visualizá en un solo panel todo tu concesionario: stock, ventas, gastos, rentabilidad y alertas clave en tiempo real."
             benefits={[
-              'Rentabilidad por vehículo (ganancia neta automática)',
-              'Control de costos fijos y ganancias globales',
-              'Reportes mensuales y dashboards claros',
-              'Alertas inteligentes (baja rotación, costos altos)',
+              'Rentabilidad por vehículo con ganancia neta automática',
+              'Control de costos fijos y ganancias globales del concesionario',
+              'Reportes mensuales claros y fáciles de entender',
+              'Alertas inteligentes de baja rotación y costos elevados',
             ]}
             imageUrl="/img/dashboard.JPG" // ← Poné tu URL aquí
             reverse={true}// ← Esto invierte: imagen izquierda, texto derecha

@@ -24,7 +24,7 @@ const FeatureHighlight = ({
         {/* Lado del texto */}
         <div className="featureh-text">
           <div className="featureh-icon-wrapper">{icon}</div>
-          <h2 className="featureh-title">{title}</h2>
+          <h3 className="featureh-title">{title}</h3>
           <p className="featureh-description">{description}</p>
 
           {benefits.length > 0 && (
@@ -40,14 +40,15 @@ const FeatureHighlight = ({
 
         {/* Lado de la imagen */}
         <div className="featureh-image-container">
-          <motion.img
-            src={imageUrl}
-            alt={title}
-            className="featureh-image"
-            initial={{ scale: 1 }}
-            whileHover={{ scale: 1.04 }}
-            transition={{ duration: 0.4 }}
-          />
+        <motion.img
+          src={imageUrl}
+          alt={`${title} - Software para concesionarios Dromux`}
+          title={`${title} - Software para concesionarios Dromux`}
+          className="featureh-image"
+          initial={{ scale: 1 }}
+          whileHover={{ scale: 1.04 }}
+          transition={{ duration: 0.4 }}
+        />
         </div>
       </div>
     </motion.section>

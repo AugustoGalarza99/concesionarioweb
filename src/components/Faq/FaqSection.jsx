@@ -73,8 +73,8 @@ const FaqSection = () => {
     <section className="faq-section" id="preguntas">
       <div className="faq-container">
         <div className="faq-section-header">
-          <h2>Preguntas frecuentes</h2>
-          <p>Resolvemos las dudas más comunes antes de que nos hables</p>
+          <h2>Preguntas frecuentes sobre el software para concesionarios Dromux</h2>
+          <p>Respondemos las dudas más comunes sobre nuestro sistema de gestión para concesionarios en Argentina</p>
         </div>
 
         <div className="faq-list">

@@ -10,9 +10,9 @@ const Footer = () => {
       <div className="footer-container">
         {/* Sección de marca / descripción */}
         <div className="footer-brand">
-          <h3 className="footer-logo">Dromux Motors</h3>
+          <h3 className="footer-logo">Dromux</h3>
           <p className="footer-description">
-            Software integral para concesionarios: gestioná stock, ventas, leads y rentabilidad como nunca antes. Automatizá y maximizá ganancias.
+            Dromux es un software para concesionarios en Argentina que te permite gestionar stock, ventas, clientes y rentabilidad desde un solo sistema.
           </p>
         </div>
 
@@ -76,7 +76,7 @@ const Footer = () => {
       {/* Copyright y legal */}
       <div className="footer-bottom">
         <p className="footer-copyright">
-          &copy; {currentYear} Dromux Motors. Todos los derechos reservados.
+          &copy; {currentYear} Dromux. Software para concesionarios en Argentina.
         </p>
       </div>
     </footer>

@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: url('https://thumbs.dreamstime.com/b/black-lamborghini-aventador-smoke-dramatic-image-black-lamborghini-aventador-shrouded-smoke-dramatically-lit-373459846.jpg'); /* Cambiá por tu imagen o una de las sugeridas */
+  background-image: url('/img/dromux10.png'); /* Cambiá por tu imagen o una de las sugeridas */
   background-size: cover;
   background-position: center;
   overflow: hidden;               /* corta cualquier desborde */

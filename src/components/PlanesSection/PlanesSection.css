@@ -1,5 +1,5 @@
 .planes-section {
-  padding: 8rem 2rem;
+  padding: 4rem 2rem;
   background: #0a0a0a;
 }
 
@@ -50,7 +50,7 @@
 
 .popular-badge {
   position: absolute;
-  top: -12px;
+  top: -8px;
   left: 50%;
   transform: translateX(-50%);
   background: #00d4ff;

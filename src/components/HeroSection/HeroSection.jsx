@@ -45,7 +45,7 @@ const HeroSection = () => {
         animate="visible"
       >
         <motion.h1 variants={itemVariants}>
-          Software de gestión para concesionarios de autos que centraliza todo tu negocio
+          Software de gestión para concesionarios
         </motion.h1>
 
         <motion.p variants={itemVariants}>
@@ -67,34 +67,20 @@ const HeroSection = () => {
             className="hero-cta-secondary"
             whileHover="hover"
             variants={ctaVariants}
+            onClick={(e) => {
+              e.preventDefault();
+              const el = document.getElementById("funcionalidades");
+              if (el) {
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            }}
           >
             Ver Funcionalidades
           </motion.a>
         </motion.div>
 
         {/* Features rápidas con stagger */}
-        <motion.div
-          className="hero-features"
-          variants={containerVariants}
-          initial="hidden"
-          animate="visible"
-        >
-          {[
-            'Digitaliza tu concesionario',
-            'Gestión de ventas',
-            'Análisis de rentabilidad por vehículo',
-            'CRM avanzado',
-          ].map((text, index) => (
-            <motion.div
-              key={index}
-              className="hero-feature-item"
-              variants={itemVariants}
-              whileHover={{ y: -8, boxShadow: '0 12px 24px rgba(0, 212, 255, 0.2)' }}
-            >
-              {text}
-            </motion.div>
-          ))}
-        </motion.div>
+
       </motion.div>
     </section>
   );

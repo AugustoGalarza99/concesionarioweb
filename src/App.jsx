@@ -3,7 +3,6 @@ import { Helmet, HelmetProvider } from 'react-helmet-async';
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection/HeroSection";
-import Carousel from "./components/Carousel/Carousel";
 import Footer from "./components/Footer/Footer";
 import FloatingWhatsAppButton from "./components/Whatsapp/Whatsapp";
 import FeaturesSection from "./components/FeaturesSection/FeatureSection";
@@ -42,7 +41,7 @@ function App() {
         <section id="home" >
           <HeroSection />
         </section>
-        <section id="features">
+        <section id="funcionalidades">
           <FeaturesSection />
         </section>
         <section id="modelos">
@@ -79,9 +78,6 @@ function App() {
         <section id="planes">
           <PlanesSection />
         </section>
-        {/*<section id="carousel">
-          <Carousel />
-        </section>*/}
         <section id="faq">
           <FaqSection />
         </section>

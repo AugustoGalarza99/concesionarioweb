@@ -5,7 +5,7 @@ import './PlanesSection.css';
 
 const plans = [
   {
-    name: 'Básico',
+    name: 'Impulso',
     //subtitle: '1 mes de prueba gratuita',
     popular: false,
     features: [
@@ -25,7 +25,7 @@ const plans = [
     buttonVariant: 'primary',
   },
   {
-    name: 'Intermedio',
+    name: 'Expansión',
     //subtitle: '1 mes de prueba gratuita',
     popular: true,
     features: [
@@ -45,7 +45,7 @@ const plans = [
     buttonVariant: 'popular',
   },
   {
-    name: 'Premium',
+    name: 'Liderazgo',
     //subtitle: '1 mes de prueba gratuita',
     popular: false,
     features: [
@@ -53,7 +53,7 @@ const plans = [
       { name: 'Unidades publicadas', value: 'Hasta 100', included: true },
       { name: 'Branding', value: 'Customizable', included: true },
       { name: 'Dashboards', value: 'Completo', included: true },
-      { name: 'Soporte', value: 'WhatsApp con prioridad', included: true },
+      { name: 'Soporte', value: 'WhatsApp', included: true },
       { name: 'Hosting incluido', value: '✓', included: true },
       { name: 'Dominio .com', value: '✓', included: true },
       { name: 'Gestión de stock', value: '✓', included: true },
@@ -68,18 +68,18 @@ const plans = [
 
 const PlanesSection = () => {
   return (
-    <section className="planes-section" id="precios">
-      <div className="container">
-        <div className="section-header">
+    <section className="planes-section" id="planes">
+      <div className="planes-container">
+        <div className="planes-section-header">
           <h2>Planes del software para concesionarios Dromux</h2>
           <p>Prueba gratuita de 1 mes en todos los planes. Implementación bonificada y sin contrato mínimo.</p>
         </div>
 
-        <div className="plans-grid">
+        <div className="planes-grid">
           {plans.map((plan) => (
             <motion.div
               key={plan.name}
-              className={`plan-card ${plan.popular ? 'popular' : ''}`}
+              className={`planes-card ${plan.popular ? 'popular' : ''}`}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -87,29 +87,29 @@ const PlanesSection = () => {
               whileHover={{ y: -10, boxShadow: '0 20px 40px rgba(0, 212, 255, 0.2)' }}
             >
               {plan.popular && (
-                <div className="popular-badge">
+                <div className="planes-popular-badge">
                   <span>★ Más popular</span>
                 </div>
               )}
 
-              <h3 className="plan-name">{plan.name}</h3>
-              {plan.subtitle && <p className="plan-subtitle">{plan.subtitle}</p>}
+              <h3 className="planes-name">{plan.name}</h3>
+              {plan.subtitle && <p className="planes-subtitle">{plan.subtitle}</p>}
 
-              <ul className="plan-features">
+              <ul className="planes-features">
                 {plan.features.map((feat, idx) => (
                   <li
                     key={idx}
-                    className={`plan-feature ${feat.included ? 'included' : 'excluded'}`}
+                    className={`planes-feature ${feat.included ? 'included' : 'excluded'}`}
                   >
                     {feat.included ? (
-                      <CheckCircle size={18} className="check-icon" />
+                      <CheckCircle size={18} className="planes-check-icon" />
                     ) : (
-                      <XCircle size={18} className="cross-icon" />
+                      <XCircle size={18} className="planes-cross-icon" />
                     )}
 
-                    <span className="feat-label">{feat.name}:</span>
+                    <span className="planes-feat-label">{feat.name}:</span>
 
-                    <span className={`feat-value ${feat.highlight ? 'highlight' : ''}`}>
+                    <span className={`planes-feat-value ${feat.highlight ? 'highlight' : ''}`}>
                       {feat.value}
                     </span>
                   </li>
@@ -120,7 +120,7 @@ const PlanesSection = () => {
                 href={`https://wa.me/5493572674920?text=Hola%2C%20quiero%20consultar%20por%20el%20plan%20${encodeURIComponent(plan.name)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`plan-cta ${plan.buttonVariant}`}
+                className={`planes-cta ${plan.buttonVariant}`}
               >
                 {plan.ctaText}
               </a>
@@ -128,7 +128,7 @@ const PlanesSection = () => {
           ))}
         </div>
 
-        {/*<p className="plans-note">
+        {/*<p className="planes-note">
           Todos los planes incluyen 1 mes de prueba gratuita. Sin compromiso de permanencia ni costos ocultos.
         </p>*/}
       </div>

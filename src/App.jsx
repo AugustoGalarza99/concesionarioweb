@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import LogoLoader from "./components/LogoLoader/LogoLoader";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
@@ -13,11 +14,22 @@ import ConcesionariosPreview from "./components/ConcesionariosPreview/Concesiona
 import PlanesSection from "./components/PlanesSection/PlanesSection";
 
 function App() {
+  const [showLoader, setShowLoader] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowLoader(false);
+    }, 2200); // ⏳ 2.2 segundos elegantes
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <>
+      <LogoLoader isVisible={showLoader} />
       {/* SEO base de la home */}
       <HelmetProvider>
-       <Helmet>
+      <Helmet>
         <title>Dromux | Software para Concesionarios en Argentina</title>
         <meta 
           name="description" 

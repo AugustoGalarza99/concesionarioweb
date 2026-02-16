@@ -7,7 +7,7 @@ const concesionarios = [
     id: 1,
     title: 'Ejemplo de página web para concesionario (diseño claro)',
     description: 'Diseño moderno y modificable al gusto de cada concesionario.',
-    imageUrl: '/img/dromux.png', // ← Cambia por tu screenshot en /public/img/
+    imageUrl: '/img/modeloblanco.JPG', // ← Cambia por tu screenshot en /public/img/
     url: 'https://concesionario-a.tudominio.com', // ← URL real del sitio
     alt: 'Ejemplo de página web para concesionario con catálogo de vehículos creada con Dromux',
   },
@@ -15,7 +15,7 @@ const concesionarios = [
     id: 2,
     title: 'Ejemplo de página web para concesionario (diseño oscuro)',
     description: 'Estilo premium y modificable al gusto de cada concesionario.',
-    imageUrl: '/img/dromux.png', // ← Cambia por tu screenshot
+    imageUrl: '/img/modelooscuro.JPG', // ← Cambia por tu screenshot
     url: 'https://concesionario-b.tudominio.com', // ← URL real
     alt: 'Ejemplo de página web para concesionario con catálogo de vehículos creada con Dromux',
   },
@@ -23,7 +23,7 @@ const concesionarios = [
 
 const ConcesionariosPreview = () => {
   return (
-    <section className="concesionarios-preview" id="concesionarios">
+    <section className="concesionarios-preview" id="modelos">
       <div className="container">
         <div className="section-header">
           <h2>Ejemplos de páginas web para concesionarios con Dromux</h2>

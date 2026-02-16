@@ -56,7 +56,7 @@ const Navbar = () => {
       <div className="navbar-container">
         <div className="navbar-logo">
           <a href="/" onClick={closeMenu}>
-            <img src="/img/dromuxx-blanco.png" alt="Dromux Motors" className="navbar-logo-img" />
+            <img src="/img/dromux-blanco.png" alt="Dromux Motors" className="navbar-logo-img" />
           </a>
         </div>
 

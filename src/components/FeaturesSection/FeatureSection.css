@@ -121,6 +121,7 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .features-section-header h2 { font-size: 2.8rem; }
+  .features-section-header h2 { font-size: 2.4rem; }
   .features-card { padding: 2.5rem 1.8rem; }
+  .features-section-header p { font-size: 1.1rem;}
 }

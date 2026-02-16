@@ -95,7 +95,7 @@ const FeaturesSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Pedí tu Demo Gratis ahora
+            Hablanos para agendar una reunion
           </a>
         </motion.div>
       </div>

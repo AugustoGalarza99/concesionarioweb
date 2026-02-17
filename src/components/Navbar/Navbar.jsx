@@ -77,7 +77,7 @@ const Navbar = () => {
 
         {/* CTA desktop */}
         <a
-          href="https://wa.me/5493572674920?text=Hola%2C%20quiero%20una%20demo"
+          href="https://wa.me/5493572674920?text=Hola%2C%20quiero%20informacion%20del%20software"
           className="navbar-cta-button desktop"
         >
           Contacto
@@ -109,7 +109,7 @@ const Navbar = () => {
           </ul>
 
           <a
-            href="https://wa.me/5493572674920?text=Hola%2C%20quiero%20una%20demo"
+            href="https://wa.me/5493572674920?text=Hola%2C%20quiero%20informacion%20del%20software"
             className="navbar-cta-button navbar-mobile-cta"
             onClick={closeMenu}
           >

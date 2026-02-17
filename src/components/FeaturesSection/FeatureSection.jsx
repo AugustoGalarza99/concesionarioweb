@@ -90,7 +90,7 @@ const FeaturesSection = () => {
         >
           <p>¿Querés ver cómo se adapta a tu concesionario?</p>
           <a
-            href="https://wa.me/5493572674920?text=Hola%2C%20quiero%20una%20demo%20personalizada%20del%20software%20para%20concesionarios"
+            href="https://wa.me/5493572674920?text=Hola%2C%20quiero%20informacion%20del%20software"
             className="features-cta-primary"
             target="_blank"
             rel="noopener noreferrer"

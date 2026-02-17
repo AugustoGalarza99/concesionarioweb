@@ -54,7 +54,7 @@ const HeroSection = () => {
 
         <motion.div className="hero-cta" variants={ctaVariants}>
           <motion.a
-            href="https://wa.me/5493572674920?text=Quiero%20una%20demo"
+            href="https://wa.me/5493572674920?text=Hola%2C%20quiero%20informacion%20del%20software"
             className="hero-cta-primary"
             whileHover="hover"
             variants={ctaVariants}

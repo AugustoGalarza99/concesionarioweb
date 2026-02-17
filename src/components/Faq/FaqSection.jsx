@@ -60,6 +60,14 @@ const faqItems = [
       '• También: llamadas, reuniones por Meet/Zoom y correo\n\n' +
       'Nos tomamos muy en serio que puedas trabajar tranquilo.',
   },
+    {
+    question: '¿Que es un sub-dominio?',
+    answer:
+      'El sub-dominio que incluye cada plan es un dominio gratuito proporcionado por el software.\n\n' +
+      '• Ejemplo: concesionario.dromux.com\n' +
+      '• En caso de querer un dominio personalizado por el cliente ejemplo concesionario.com debera ser comprado por el cliente.\n' +
+      'Si quieres un dominio personalizado te ayudamos en cada paso para adquirirlo y comprarlo.',
+  },
 ];
 
 const FaqSection = () => {

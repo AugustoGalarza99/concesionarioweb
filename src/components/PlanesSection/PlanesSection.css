@@ -41,7 +41,7 @@
   overflow: hidden;
 }
 
-.planes-card.popular {
+.planes-card .planes-popular {
   border-color: #00d4ff;
   box-shadow: 0 0 30px rgba(0, 212, 255, 0.25);
   transform: scale(1.05);

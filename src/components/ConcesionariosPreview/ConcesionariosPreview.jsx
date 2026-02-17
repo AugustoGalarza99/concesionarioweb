@@ -3,22 +3,23 @@ import { ExternalLink } from 'lucide-react';
 import './ConcesionariosPreview.css';
 
 const concesionarios = [
-  {
+    {
     id: 1,
-    title: 'Ejemplo de página web para concesionario (diseño claro)',
-    description: 'Diseño moderno y modificable al gusto de cada concesionario.',
-    imageUrl: '/img/modeloblanco.JPG', // ← Cambia por tu screenshot en /public/img/
-    url: 'https://concesionario-a.tudominio.com', // ← URL real del sitio
+    title: 'Ejemplo de página web para concesionario (diseño oscuro)',
+    description: 'Estilo premium y modificable al gusto de cada concesionario.',
+    imageUrl: '/img/modelooscuro.JPG', // ← Cambia por tu screenshot
+    url: 'https://concesionario-a.dromux.com', // ← URL real
     alt: 'Ejemplo de página web para concesionario con catálogo de vehículos creada con Dromux',
   },
   {
     id: 2,
-    title: 'Ejemplo de página web para concesionario (diseño oscuro)',
-    description: 'Estilo premium y modificable al gusto de cada concesionario.',
-    imageUrl: '/img/modelooscuro.JPG', // ← Cambia por tu screenshot
-    url: 'https://concesionario-b.tudominio.com', // ← URL real
+    title: 'Ejemplo de página web para concesionario (diseño claro)',
+    description: 'Diseño moderno y modificable al gusto de cada concesionario.',
+    imageUrl: '/img/modeloblanco.JPG', // ← Cambia por tu screenshot en /public/img/
+    url: 'https://concesionario-b.dromux.com', // ← URL real del sitio
     alt: 'Ejemplo de página web para concesionario con catálogo de vehículos creada con Dromux',
   },
+
 ];
 
 const ConcesionariosPreview = () => {

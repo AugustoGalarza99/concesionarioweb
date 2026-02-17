@@ -36,7 +36,7 @@ const Footer = () => {
             </li>
             <li>
               <Mail className="footer-icon" size={20} />
-              <a href="mailto:tuemail@dominio.com">tuemail@dominio.com</a> {/* Cambiá por tu email real */}
+              <a href="mailto:tuemail@dominio.com">dromuxmotors@gmail.com</a> {/* Cambiá por tu email real */}
             </li>
           </ul>
         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
           <h4 className="footer-subtitle">Seguinos</h4>
           <div className="footer-social-icons">
             <a
-              href="https://www.facebook.com/tu-perfil" // Cambiá por tu link real
+              href="https://www.facebook.com/profile.php?id=61570872520576" // Cambiá por tu link real
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -54,7 +54,7 @@ const Footer = () => {
               <Facebook className="social-icon" size={24} />
             </a>
             <a
-              href="https://www.instagram.com/tu-usuario/" // Cambiá por tu link real
+              href="https://www.instagram.com/dromux.motors/" // Cambiá por tu link real
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"

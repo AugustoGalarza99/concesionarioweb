@@ -15,7 +15,7 @@ const plans = [
       { name: 'Dashboards', value: 'Completo', included: true },
       { name: 'Soporte', value: 'WhatsApp', included: true },
       { name: 'Hosting incluido', value: '✓', included: true },
-      { name: 'Dominio .com', value: '✓', included: true },
+      { name: 'Sub-dominio', value: '✓', included: true },
       { name: 'Gestión de stock', value: '✓', included: true },
       { name: 'Gestión de compras', value: '✓', included: true },
       { name: 'Gestión de ventas y leads', value: '✓', included: true },
@@ -35,7 +35,7 @@ const plans = [
       { name: 'Dashboards', value: 'Completo', included: true },
       { name: 'Soporte', value: 'WhatsApp', included: true },
       { name: 'Hosting incluido', value: '✓', included: true },
-      { name: 'Dominio .com', value: '✓', included: true },
+      { name: 'Sub-dominio', value: '✓', included: true },
       { name: 'Gestión de stock', value: '✓', included: true },
       { name: 'Gestión de compras', value: '✓', included: true },
       { name: 'Gestión de ventas y leads', value: '✓', included: true },
@@ -55,7 +55,7 @@ const plans = [
       { name: 'Dashboards', value: 'Completo', included: true },
       { name: 'Soporte', value: 'WhatsApp', included: true },
       { name: 'Hosting incluido', value: '✓', included: true },
-      { name: 'Dominio .com', value: '✓', included: true },
+      { name: 'Sub-dominio', value: '✓', included: true },
       { name: 'Gestión de stock', value: '✓', included: true },
       { name: 'Gestión de compras', value: '✓', included: true },
       { name: 'Gestión de ventas y leads', value: '✓', included: true },
@@ -79,7 +79,7 @@ const PlanesSection = () => {
           {plans.map((plan) => (
             <motion.div
               key={plan.name}
-              className={`planes-card ${plan.popular ? 'popular' : ''}`}
+              className={`planes-card ${plan.popular ? 'planes-popular' : ''}`}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -99,7 +99,7 @@ const PlanesSection = () => {
                 {plan.features.map((feat, idx) => (
                   <li
                     key={idx}
-                    className={`planes-feature ${feat.included ? 'included' : 'excluded'}`}
+                    className={`planes-feature ${feat.included ? 'planes-included' : 'planes-excluded'}`}
                   >
                     {feat.included ? (
                       <CheckCircle size={18} className="planes-check-icon" />
@@ -109,7 +109,7 @@ const PlanesSection = () => {
 
                     <span className="planes-feat-label">{feat.name}:</span>
 
-                    <span className={`planes-feat-value ${feat.highlight ? 'highlight' : ''}`}>
+                    <span className={`planes-feat-value ${feat.highlight ? 'planes-highlight' : ''}`}>
                       {feat.value}
                     </span>
                   </li>
